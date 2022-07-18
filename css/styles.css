@@ -75,9 +75,13 @@
     scroll-behavior: smooth;
   }
 }
-header {
+header, #about {
 
      background-color:#262624;
+}
+#download {
+
+     background-color:#f9cdcd;
 }
 body {
   margin: 0;
