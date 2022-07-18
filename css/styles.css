@@ -81,8 +81,9 @@ header, #about {
 }
 #download {
 
-     background-color:#f9cdcd;
+     border-color:#f9cdcd;
 }
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);

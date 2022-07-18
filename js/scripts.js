@@ -13,6 +13,7 @@ window.addEventListener('DOMContentLoaded', event => {
     var navbarShrink = function () {
         const elems = document.body.querySelectorAll('a');
         const navbarCollapsible = document.body.querySelector('#mainNav');
+        const butDown = document.body.querySelector('#download');
 
         if (!navbarCollapsible) {
             return;
@@ -33,6 +34,19 @@ window.addEventListener('DOMContentLoaded', event => {
             el.classList.add("text-pink");
             el.classList.remove("text-dark");
             });
+        }
+        if(window.scrollY >= $('#about').position().top && window.scrollY < $('#contact').position().top){
+            [].forEach.call(elems, function(el) {
+                el.classList.remove("text-dark");
+                el.classList.add("text-pink");
+            });
+           
+        }else{
+            [].forEach.call(elems, function(el) {
+            el.classList.add("text-dark");
+            el.classList.remove("text-pink");
+            });
+            
         }
     };
 
