@@ -41,7 +41,7 @@ window.addEventListener('DOMContentLoaded', event => {
                 el.classList.add("text-pink");
             });
            
-        }else{
+        }else if(window.scrollY >= $('#contact').position().top){
             [].forEach.call(elems, function(el) {
             el.classList.add("text-dark");
             el.classList.remove("text-pink");
