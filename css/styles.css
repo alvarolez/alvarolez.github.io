@@ -75,7 +75,7 @@
     scroll-behavior: smooth;
   }
 }
-header, #about {
+header, #about, .card-pink {
 
      background-color:#262624;
 }
